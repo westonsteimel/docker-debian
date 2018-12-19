@@ -8,4 +8,5 @@ RUN apt-get update \
     perl-base \
     libnettle6 \
     tar \
-    --no-install-recommends
+    --no-install-recommends \
+    && rm -rf /var/lib/apt/lists/*
